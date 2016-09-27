@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html>
+<title>NDAC,tokyo</title>
+<head>
+<style>
+th{
+background-color:#FF5733;
+color:white;
+}
+td{
+text-align:center;
+
+}
+body {
+    margin: 0;
+}
+
+ul {
+    
+    font-size:115%;
+	font-family:verdana;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+	z-index:1;
+}
+
+li a {border-bottom:2.1px solid black;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #FF5733;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+</style>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Month', 'Actual', 'Male', 'Female', ],
+         ['2001',  31.38,      16.49,         14.89,                     ],
+         ['2003',  32.95,      17.05,        15.45,                      ],
+         ['2005',  33.88,      17.99,        16.23,                      ],
+         ['2007',  34.53,      18.65,        16.76,                    ],
+         ['2009',  35.88,      18.96,         17.04,                      ],
+		 ['2011',  36.76,      19.21,         17.55,                      ]
+      ]);
+
+    var options = {
+      title : 'Population of Varanasi (in lacs)',
+      vAxis: {title: 'population (in lacs)',viewWindow: {
+        min: 10,
+        max: 40
+    },
+    ticks: [10, 20, 30, 40]},
+      hAxis: {title: 'Year'},
+      seriesType: 'bars',
+      series: {5: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+    </script>
+	
+	
+	 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Year','Pop. Growth'],
+         ['2001', 25.14],
+         ['2003', 23.10],
+         ['2005',21.40],
+         ['2007', 20.10],
+         ['2009',19.10],
+		 ['2011',17.15]
+      ]);
+
+    var options = {
+      title : 'population growth in varanasi',
+      vAxis: {title: 'population growth-- (in %)',viewWindow: {
+        min: 0,
+        max: 30
+    },
+    ticks: [0, 5, 10,15,20,25,30]},
+      hAxis: {title: 'Year'},
+      seriesType: 'line',
+      series: {5: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div1'));
+    chart.draw(data, options);
+  }
+    </script>
+	
+	
+	
+	
+	
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Area Sq Km', 'Density per square Km'],
+          ['2001',  1535,      2045],
+          ['2003',  1535,      2095],
+          ['2005',  1535,       2138],
+          ['2007',  1535,      2289],
+		  ['2009',  1535,      2355],
+		  ['2011',  1535,      2395]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {viewWindow: {
+        min: 1000,
+        max: 3000
+    },
+		  ticks: [1000,1500, 2000, 2500,3000]}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
+      }
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	<script type="text/javascript" src="js1.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Year', 'Sex Ratio', ],
+         ['2001',  903,      ],
+         ['2003',  905,     ],
+         ['2005',  906,     ],
+         ['2007',  909,   ],
+         ['2009',  912,   ],
+		 ['2011',  913,    ]
+      ]);
+
+    var options = {
+      title : 'Sex Ratio of Varanasi ',
+      vAxis: {title: 'Sex Ratio',viewWindow: {
+        min: 900,
+        max: 915
+    },
+    ticks: [900, 903, 906, 909,912,915]},
+      hAxis: {title: 'Year'},
+      seriesType: 'bars',
+      series: {5: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div3'));
+    chart.draw(data, options);
+  }
+    </script>
+	
+	
+	
+
+	
+	
+	
+	
+	<script type="text/javascript" src="js1.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Year', 'Literacy rate', ],
+         ['2001',  66,      ],
+         ['2003',  68,     ],
+         ['2005',  70,     ],
+         ['2007',  73,   ],
+         ['2009',  75,   ],
+		 ['2011',  76,    ]
+      ]);
+
+    var options = {
+      title : 'Literacy rate of Varanasi ',
+      vAxis: {title: 'Literacy Rate',viewWindow: {
+        min: 63,
+        max: 78
+    },
+    ticks: [63, 66, 69, 72,75,78]},
+      hAxis: {title: 'Year'},
+      seriesType: 'line',
+      series: {5: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div5'));
+    chart.draw(data, options);
+  }
+    </script>
+	
+
+	
+</head>
+<body>
+<header>
+<h style="width:240px; background-color:#FF5733;font-size:300%;font-family:fixedsys;padding:12px; position:fixed;z-index:1;width:100%;margin-bottom:50px;text-align:center;color:#F3E9E7;"><b>National Data Analysis Center, Tokyo</b></h><br>
+</header>
+<br><br><br><br>
+<ul>
+  <li><a class="active"><i>Varanasi Demographics</i></a></li>
+  <li><a href="#1st">Population Distribution</a></li>
+  <li><a href="#chart_div">Population Growth</a></li>
+  <li><a href="#chart_div1">Area </a></li>
+  <li><a href="#chart_div1">Density per sq. km </a></li>
+  <li><a href="#chart_div2">Sex Ratio</a></li>
+  <li><a href="#chart_div3">Average Literacy</a></li>
+  <li><a href="#chart_div5">Prop. to UP Population</a></li>
+  <li><a href="#chart_div5">Child Population</a></li>
+  <li ><a href="#chart_div5">Non-Working Population</a></li>
+</ul>
+
+<div >
+  <h3 style="margin-right:0px;margin-left:15%;"><img src="varanasi.jpg " width="100%"  height="280px"></h3>
+</div>
+<div id="1st" style="background-color:#993300;color:white;font-size:200%;margin-left:15%;margin-top:-2.3%;">
+<p>Varanasi, or Benaras, (also known as Kashi) is one of the oldest living cities in the world. Varanasi`s Prominence in Hindu mythology is virtually unrevealed. Mark Twain, the English author and literature, who was enthralled by the legend and sanctity of Benaras, once wrote :
+Benaras is older than history, older than tradition, older even than legend and looks twice as old as all of them put together</p>
+</div>
+<div >
+<p  style="color:white;background-color:#59b300;font-size:200%;margin-left:15%;margin-top:-2%;">Population Distribution in Varanasi</p>
+</div>
+<div  id="chart_div" style="margin-left:30%;position:relative;width: 900px;height: 500px;"></div><br><br>
+
+<p  style="color:white;background-color:#59b300;font-size:200%;margin-left:15%;margin-top:-2%;">Population growth in Varanasi</p>
+
+<div style="margin-left:25%;"id="chart_div1" style="width: 900px; height: 1000px;"></div><br><br>
+<p id="3rd" style="color:white;background-color:#59b300;font-size:200%;margin-left:15%;margin-top:-2%;">Area & Population Density per sq km</p>
+ <div style="margin-left:25%;" id="chart_div2" style="width: 100%; height: 500px;"></div><br><br>
+ <p id="4th"style="color:white;background-color:#59b300;font-size:200%;margin-left:15%;margin-top:-2%;">Sex Ratio</p>
+ <div id="chart_div3" style="margin-left:30%;width: 900px;height: 500px;"></div><br><br>
+ <p id="5th" style="color:white;background-color:#59b300;font-size:200%;margin-left:15%;margin-top:-2%;">Literacy Rate</p>
+ <div id="chart_div5" style="margin-left:30%;width: 900px;height: 500px;"></div><br><br>
+ 
+<p id="6th" style="color:white;background-color:#59b300;font-size:200%;margin-left:15%;margin-top:-2%;"> Other Information</p>
+<table style="font-size:130%;width:70%; margin-left:250px; margin-top:-2px;border-collapse:collapse;" border="1 px solid black" >
+<tr>
+<th>Year</th>
+<th>Prop. to UP population</th>
+<th>Child Population</th>
+<th>Non-Working Population</th>
+</tr>
+<tr>
+<td>2001</td>
+<td>1.89%</td>
+<td>5,75,882</td>
+<td>24,98,765</td></tr>
+<tr><td>2003</td>
+<td>1.88%</td>
+<td>5,59,452</td>
+<td>23,06,548</td></tr>
+<tr><td>2005</td>
+<td>1.87%</td>
+<td>5,32,879</td>
+<td>22,89,754</td></tr>
+<tr><td>2007</td>
+<td>1.86%</td>
+<td>5,12,568</td>
+<td>2,16,855</td></tr>
+<tr><td>2009</td>
+<td>1.85%</td>
+<td>5,02,248</td>
+<td>20,96,875</td></tr>
+<tr><td>2011</td>
+<td>1.84%</td>
+<td>4,97,151</td>
+<td>19,56,133</td></tr>
+</table> 
+<br><br><br>
+<p style="margin-left:85%;color:black;font-size:120%;">-Data analysis by-<br><b><i>Miu xin</i></b><br>(Data Analyst)</p>
+
+<br><br>
+
+<footer>
+<div style="background-color:#FF5733;color:white;text-align:center;z-index:2;width:100%;margin-bottom:-5%;position:absolute;">
+<p> © All Rights Reserved<br>National Data Analysis Center<br>Tokyo</p>
+<p style="text-align:right;margin-top:-5%;">Developed by- Shivam Tayal (tayal.shivam.13@gmail.com,8439458067)<br>Jagjit Singh (sainijagjit@rocketmail.com,8727021333)<br>Rohan Sethi(9781451230)<br><b>Dr.B R Ambedkar National Institute of Technology, Jalandher</b></p>
+</div>
+</footer>
+</body>
+</html>
+
+

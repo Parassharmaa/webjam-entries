@@ -1,0 +1,101 @@
+  body {
+      position: relative; 
+  }
+  pre{
+    background-color: #F44336;
+    border: 1px #F44336;
+    color: white;
+
+  }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+
+  #about {padding-top:50px;height:680px;color: #fff; background-image: url('../images/bg.jpg');}
+  #contact {padding-top:50px;height:640px;color: #fff; background-color: white;}
+
+.contact_head{
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  line-height: 2px;
+  text-align: center;
+  color: black !important;
+}
+
+
+ #img_1:hover
+  {
+  -webkit-transform: rotateZ(-359deg);
+  -ms-transform: rotateZ(-359deg);
+  transform: rotateZ(-359deg);
+  transition-duration: 1s;
+  }
+  #img_2:hover
+  {
+  -webkit-transform: rotateZ(-359deg);
+  -ms-transform: rotateZ(-359deg);
+  transform: rotateZ(-359deg);
+  transition-duration: 1s;
+  }
+  #img_3:hover
+  {
+  -webkit-transform: rotateZ(-359deg);
+  -ms-transform: rotateZ(-359deg);
+  transform: rotateZ(-359deg);
+  transition-duration: 1s;
+  }
+  #img_4:hover
+  {
+  -webkit-transform: rotateZ(-359deg);
+  -ms-transform: rotateZ(-359deg);
+  transform: rotateZ(-359deg);
+  transition-duration: 1s;
+  }
+
+
+
+  @-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+#img_about {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+#img_about:hover, #img_about:focus, #img_about:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
